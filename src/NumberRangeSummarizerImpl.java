@@ -7,6 +7,14 @@ import java.util.stream.Collectors;
 
 public class NumberRangeSummarizerImpl implements NumberRangeSummarizer{
 
+    /*
+    ASSUMPTIONS MADE
+    -No missing commas
+    -No invalid characters
+    -No floats
+    -No negative signs with spaces
+    -No duplicates
+     */
     @Override
     public Collection<Integer> collect(String input) {
         //Check if input is empty, return empty list.
